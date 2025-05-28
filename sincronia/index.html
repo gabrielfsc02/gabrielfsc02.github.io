@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome/Nome da Empresa - Soluções Digitais Inteligentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.292.0/dist/umd/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827; /* Dark blue-gray */
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700;
+            margin-bottom: 2rem; /* mb-8 */
+            text-align: center;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 2rem; /* p-8 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .cta-button {
+            background-color: #3B82F6; /* blue-500 */
+            color: white;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2563EB; /* blue-600 */
+        }
+        /* Estilo para o menu mobile */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Seu Logo/Nome</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
+                <a href="#servicos" class="text-gray-600 hover:text-blue-600">Serviços</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600">Portfólio</a>
+                <a href="#contato" class="text-gray-600 hover:text-blue-600">Contato</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute top-16 left-0 right-0 transform -translate-x-full">
+            <a href="#sobre" class="block px-6 py-3 text-gray-600 hover:bg-blue-500 hover:text-white mobile-menu-link">Sobre</a>
+            <a href="#servicos" class="block px-6 py-3 text-gray-600 hover:bg-blue-500 hover:text-white mobile-menu-link">Serviços</a>
+            <a href="#portfolio" class="block px-6 py-3 text-gray-600 hover:bg-blue-500 hover:text-white mobile-menu-link">Portfólio</a>
+            <a href="#contato" class="block px-6 py-3 text-gray-600 hover:bg-blue-500 hover:text-white mobile-menu-link">Contato</a>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforme seu Negócio com Soluções Digitais Inteligentes</h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto">Ajudamos sua empresa a economizar tempo, otimizar processos e fortalecer sua presença online para você focar no crescimento.</p>
+            <a href="#servicos" class="cta-button text-lg">Descubra Nossas Soluções</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-gray-800">Sua Parceria Estratégica para o Mundo Digital</h2>
+            <div class="max-w-3xl mx-auto text-center text-gray-600 space-y-6">
+                <p class="text-lg">Olá! Sou [Seu Nome/Nome da Empresa], e minha missão é simplificar a tecnologia para pequenas e médias empresas como a sua. Entendo os desafios do dia a dia e ofereço soluções práticas para que você possa ter mais eficiência e resultados.</p>
+                <p class="text-lg">Seja automatizando seu atendimento no WhatsApp, organizando suas planilhas, criando um site profissional ou marcando sua presença no Google, estou aqui para ser seu parceiro de confiança na jornada de transformação digital. Vamos juntos impulsionar o seu negócio!</p>
+            </div>
+             <div class="mt-12 text-center">
+                <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Sua+Foto+Profissional+ou+Logo" alt="Sua Foto ou Logo da Empresa" class="mx-auto rounded-lg shadow-lg w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Nossas Soluções para Impulsionar seu Negócio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="bot" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Automação de Atendimento com IA</h3>
+                    <p class="text-gray-600 text-center">Chatbots inteligentes para WhatsApp e Instagram que qualificam clientes, fornecem cotações e respondem perguntas 24/7, liberando seu tempo.</p>
+                </div>
+
+                <div class="service-card">
+                     <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="settings-2" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Automação de Processos</h3>
+                    <p class="text-gray-600 text-center">Integramos seu WhatsApp a planilhas, automatizamos tarefas manuais e criamos painéis para você gerenciar seu negócio com mais eficiência.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="monitor-smartphone" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Desenvolvimento de Sites Profissionais</h3>
+                    <p class="text-gray-600 text-center">Criamos sites institucionais e landing pages modernas e responsivas, com suporte e manutenção mensal para sua tranquilidade.</p>
+                </div>
+
+                <div class="service-card">
+                     <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="map-pin" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Presença no Google (Meu Negócio)</h3>
+                    <p class="text-gray-600 text-center">Colocamos sua empresa no mapa! Criamos e otimizamos seu Perfil da Empresa no Google para que clientes te encontrem facilmente.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="palette" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Branding e Identidade Visual</h3>
+                    <p class="text-gray-600 text-center">Coordenamos a criação de logos, paletas de cores e toda a identidade visual da sua marca através de parceiros especializados.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="thumbs-up" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-700">Gestão de Mídias Sociais</h3>
+                    <p class="text-gray-600 text-center">Planejamos e gerenciamos o conteúdo para suas redes sociais (Instagram, Facebook) com o apoio de parceiros criativos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-gray-800">Resultados que Geramos</h2>
+            <p class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-12">Em breve, você verá aqui exemplos de como transformamos os negócios de nossos clientes. Desde a otimização do atendimento em empresas de transporte executivo até a criação de uma forte presença online para prestadores de serviço.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-200 p-8 rounded-lg shadow-md text-center">
+                    <img src="https://placehold.co/500x300/CBD5E0/4A5568?text=Projeto+Exemplo+1" alt="Projeto Exemplo 1" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700">Nome do Projeto/Cliente 1</h3>
+                    <p class="text-gray-600">Breve descrição do projeto e resultados alcançados.</p>
+                </div>
+                <div class="bg-gray-200 p-8 rounded-lg shadow-md text-center">
+                    <img src="https://placehold.co/500x300/CBD5E0/4A5568?text=Projeto+Exemplo+2" alt="Projeto Exemplo 2" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700">Nome do Projeto/Cliente 2</h3>
+                    <p class="text-gray-600">Breve descrição do projeto e resultados alcançados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Por que Escolher Nossas Soluções?</h2>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i data-lucide="clock" class="w-8 h-8 text-blue-500 mt-1"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Mais Tempo para o seu Negócio</h3>
+                        <p class="text-gray-600">Deixe as tarefas repetitivas conosco e foque no que realmente importa: crescer.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-blue-500 mt-1"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Aumento de Vendas e Oportunidades</h3>
+                        <p class="text-gray-600">Chatbots que qualificam leads e uma presença online que atrai novos clientes.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i data-lucide="sliders-horizontal" class="w-8 h-8 text-blue-500 mt-1"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Processos Otimizados</h3>
+                        <p class="text-gray-600">Menos trabalho manual e mais eficiência para sua operação diária.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i data-lucide="gem" class="w-8 h-8 text-blue-500 mt-1"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Presença Digital Profissional</h3>
+                        <p class="text-gray-600">Cause uma ótima primeira impressão e construa autoridade no seu mercado.</p>
+                    </div>
+                </div>
+                 <div class="flex items-start space-x-4 md:col-span-2 md:justify-center">
+                    <div class="flex-shrink-0">
+                        <i data-lucide="target" class="w-8 h-8 text-blue-500 mt-1"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Soluções Sob Medida</h3>
+                        <p class="text-gray-600">Entendemos suas necessidades específicas para oferecer as melhores ferramentas e estratégias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24 bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-white">Vamos Conversar?</h2>
+            <p class="text-center text-gray-300 text-lg max-w-2xl mx-auto mb-12">Pronto para levar seu negócio para o próximo nível? Entre em contato e vamos descobrir juntos como posso te ajudar.</p>
+            
+            <form id="contactForm" class="max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-xl">
+                <div id="form-message" class="mb-4 text-center"></div>
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                    <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Seu Melhor E-mail</label>
+                    <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone/WhatsApp (Opcional)</label>
+                    <input type="tel" name="phone" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Como posso te ajudar?</label>
+                    <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="cta-button w-full md:w-auto">Enviar Mensagem</button>
+                </div>
+            </form>
+            <div class="text-center mt-12">
+                <p class="text-gray-400">Ou, se preferir:</p>
+                <p class="text-lg mt-2">
+                    <a href="mailto:seuemail@exemplo.com" class="hover:text-blue-400">seuemail@exemplo.com</a>
+                </p>
+                <p class="text-lg">
+                    <a href="https://wa.me/55SEUNUMERO" target="_blank" class="hover:text-blue-400">WhatsApp: (XX) XXXXX-XXXX</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> Seu Nome/Nome da Empresa. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Desenvolvido com foco em transformar o seu negócio.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Envolve todo o script em um event listener para DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Script para o menu mobile
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+            if (mobileMenuButton && mobileMenu && menuIconOpen && menuIconClose) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('-translate-x-full');
+                    menuIconOpen.classList.toggle('hidden');
+                    menuIconClose.classList.toggle('hidden');
+                });
+            }
+
+            if (mobileMenuLinks.length > 0 && mobileMenu && menuIconOpen && menuIconClose) {
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('-translate-x-full');
+                        menuIconOpen.classList.remove('hidden');
+                        menuIconClose.classList.add('hidden');
+                    });
+                });
+            }
+            
+            // Script para o ano atual no rodapé
+            const currentYearEl = document.getElementById('currentYear');
+            if (currentYearEl) {
+                currentYearEl.textContent = new Date().getFullYear();
+            }
+
+            // Script para ícones Lucide
+            // Verifica se a biblioteca Lucide foi carregada antes de chamar createIcons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            } else {
+                console.error('Lucide library not loaded or lucide object not defined.');
+            }
+
+            // Script para formulário de contato (simulação)
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('form-message');
+
+            if (contactForm && formMessage) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Impede o envio padrão do formulário
+
+                    formMessage.textContent = 'Enviando sua mensagem...';
+                    formMessage.className = 'mb-4 text-center text-blue-600';
+
+                    const formData = new FormData(contactForm);
+                    const name = formData.get('name');
+                    // const email = formData.get('email'); // Exemplo, não usado na mensagem de sucesso abaixo
+                    // const message = formData.get('message'); // Exemplo
+
+                    // console.log('Dados do formulário:', { name, email, message }); // Para debug
+
+                    setTimeout(() => {
+                        formMessage.textContent = 'Obrigado pelo seu contato, ' + name + '! Responderemos em breve.';
+                        formMessage.className = 'mb-4 text-center text-green-600 p-3 bg-green-100 rounded-md';
+                        contactForm.reset(); // Limpa o formulário
+                    }, 2000);
+                });
+            }
+
+            // Smooth scroll para links de âncora
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId && targetId.startsWith('#') && targetId.length > 1) {
+                        try {
+                            const targetElement = document.querySelector(targetId);
+                            if (targetElement) {
+                                targetElement.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            }
+                        } catch (error) {
+                            console.error('Error finding element for smooth scroll:', error);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
